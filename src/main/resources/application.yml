@@ -1,0 +1,41 @@
+spring:
+  application.name: product-api
+  main.show-banner: false
+  pidfile: ${java.io.tmpdir}/product-api.pid
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    poolName: product-api-dbconnectionpool
+  jpa:
+    database: MYSQL
+    show-sql: false
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: validate
+queue:
+  activemq:
+    brokerUrl: vm://localhost?broker.persistent=false&broker.useJmx=true&broker.useShutdownHook=false&jms.redeliveryPolicy.maximumRedeliveries=3&jms.redeliveryPolicy.redeliveryDelay=2000
+    inMemory: true
+    pooled: true
+server:
+  port: 8080
+management:
+  port: 8081
+  context-path: /management
+endpoints:
+  autoconfig.enabled: false
+  beans.enabled: false
+  configprops.enabled: false
+  dump.enabled: false
+  env.enabled: false
+  health.enabled: true
+  info.enabled: false
+  mappings.enabled: false
+  metrics.enabled: false
+  shutdown.enabled: false
+  trace.enabled: false
+---
+spring:
+  profiles: local
+---
+
