@@ -1,6 +1,5 @@
 package com.craftsmanship.product.api.infrastructure.configuration;
 
-import com.iyzipay.commons.utils.crypto.CryptoUtils;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
@@ -37,8 +36,8 @@ public class DataSourceConfiguration {
         HikariConfig config = new HikariConfig();
         config.setDriverClassName(driverClassName);
         config.setJdbcUrl(url);
-        config.setUsername(CryptoUtils.decrypt(username));
-        config.setPassword(CryptoUtils.decrypt(password));
+        config.setUsername(username);
+        config.setPassword(password);
         config.setPoolName(poolName);
         config.setMaximumPoolSize(20);
         config.setMinimumIdle(2);

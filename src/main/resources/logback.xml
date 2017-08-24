@@ -8,7 +8,7 @@
 
     <logger name="org.springframework" level="INFO"/>
     <logger name="org.hibernate" level="INFO"/>
-    <logger name="com.crafstmanship.product.api" level="DEBUG"/>
+    <logger name="com.craftsmanship.product.api" level="DEBUG"/>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>

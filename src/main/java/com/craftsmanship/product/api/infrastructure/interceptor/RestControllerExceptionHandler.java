@@ -17,6 +17,6 @@ public class RestControllerExceptionHandler {
 
     @ExceptionHandler(ProductNotFoundException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public void handleBalanceNotSufficientException(Locale locale, Exception ex) {
+    public void handleProductNotFoundException(Locale locale, Exception ex) {
     }
 }

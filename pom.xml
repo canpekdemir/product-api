@@ -9,12 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <iyzipay-commons.version>1.1.30</iyzipay-commons.version>
         <commons-validator.version>1.1.4</commons-validator.version>
         <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
-        <iyzipay-mail-api-client.version>1.2.6.22</iyzipay-mail-api-client.version>
-        <iyzipay-queue-api-producer.version>1.2.5.20</iyzipay-queue-api-producer.version>
-        <iyzipay-rest-service.version>1.0.20</iyzipay-rest-service.version>
         <mockito-all.version>1.10.19</mockito-all.version>
         <h2.version>1.4.187</h2.version>
         <javax.el-api.version>2.2.4</javax.el-api.version>
@@ -67,31 +63,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>com.iyzipay</groupId>
-            <artifactId>iyzipay-commons-utils</artifactId>
-            <version>${iyzipay-commons.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.iyzipay</groupId>
-            <artifactId>iyzipay-rest-service</artifactId>
-            <version>${iyzipay-rest-service.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.iyzipay</groupId>
-            <artifactId>iyzipay-commons-data</artifactId>
-            <version>${iyzipay-commons.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.iyzipay</groupId>
-            <artifactId>iyzipay-mail-api-client</artifactId>
-            <version>${iyzipay-mail-api-client.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.iyzipay</groupId>
-            <artifactId>iyzipay-queue-api-producer</artifactId>
-            <version>${iyzipay-queue-api-producer.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
